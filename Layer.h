@@ -31,7 +31,7 @@ public:
     virtual void link(Layer* linkStack);
     virtual void configure(config settings);
 
-    virtual void execute(Message* message, bool sending=true) = 0;
+    virtual void execute(Message* message, bool) = 0;
 
     virtual ~Layer();
 };

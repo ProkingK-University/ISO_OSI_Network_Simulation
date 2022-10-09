@@ -8,7 +8,7 @@ class Datalink : public Layer
 public:
     Datalink();
 
-    void execute(Message* messege, bool sending=true);
+    void execute(Message* messege, bool);
 };
 
 #endif

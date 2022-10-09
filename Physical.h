@@ -14,7 +14,7 @@ public:
     void setNext(Physical* newNext);
 
     void link(Layer* LinkStack);
-    void execute(Message* message, bool sending=true);
+    void execute(Message* message, bool);
     void configure(config settings);
     
     ~Physical();

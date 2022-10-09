@@ -8,7 +8,7 @@ class Application : public Layer
 public:
     Application();
 
-    void execute(Message*message, bool sending=true);
+    void execute(Message*message, bool);
     void execute(std::string data, int contentlength);
 };
 

@@ -12,6 +12,6 @@ public:
     Transport();
 
     void configure(config settings);
-    void execute(Message* messeage, bool sending=true);
+    void execute(Message* messeage, bool);
 };
 #endif

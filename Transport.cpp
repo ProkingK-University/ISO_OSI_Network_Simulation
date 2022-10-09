@@ -31,7 +31,7 @@ void Transport::execute(Message* message, bool sending=true)
             return;
         }
 
-        down->execute(message);
+        down->execute(message, true);
     }
     else
     {

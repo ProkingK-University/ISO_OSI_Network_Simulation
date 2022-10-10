@@ -35,12 +35,23 @@ Physical::~Physical()
 
 void Physical::link(Layer* LinkStack)
 {
-    while (LinkStack)
+    Physical* nodePtr = (Physical*) LinkStack;
+
+    for (int i = 0; i < 5; i++)
     {
-        LinkStack = LinkStack->getDown();
+        nodePtr = (Physical*) nodePtr->getDown();
     }
 
-    next = (Physical*) LinkStack;
+    if (next)
+    {
+		setNext(nodePtr);
+        nodePtr->setNext(getNext());
+	}
+    else
+    {
+		setNext(nodePtr);
+        getNext()->setNext(this);
+	}
 }
 
 Physical* Physical::getNext() {return next;}

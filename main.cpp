@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    /*Application* stack1 = new Application();
+    Application* stack1 = new Application();
     Application* stack2 = new Application();
     Application* stack3 = new Application();
 
@@ -47,22 +47,7 @@ int main()
 
     delete stack1;
     delete stack2;
-    delete stack3;*/
-
-    Application* stack1 = new Application();
-
-    /*config cfg1 = config();
-
-    cfg1.computerName = "Comp 1";
-    cfg1.DestIP = "192.168.0.1";
-    cfg1.encoding = "UTF-8";
-    cfg1.ip = "127.0.0.1";
-    cfg1.port = "300";
-    cfg1.DestPort = "400";
-
-    stack1->configure(cfg1);
-
-    delete stack1;*/
+    delete stack3;
 }
 
 /*Output:

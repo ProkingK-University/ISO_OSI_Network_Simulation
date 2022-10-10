@@ -16,7 +16,7 @@ void Application::execute(Message* message, bool sending=true)
     }
     else
     {
-        std::cout<< "Computer " << computerName << "Received message: " << message->getdata() <<std::endl;
+        std::cout<< "Computer " << computerName << " Received message: " << message->getdata() <<std::endl;
     }
 }
 

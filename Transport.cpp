@@ -35,7 +35,7 @@ void Transport::execute(Message* message, bool sending=true)
     }
     else
     {
-        if (message->getDestinationPort() != DestPort)
+        if (message->getDestinationPort() != port)
         {
             std::cout<< "Message sent to wrong port" <<std::endl;
             message->PrintMessage();
@@ -45,7 +45,7 @@ void Transport::execute(Message* message, bool sending=true)
             std::cout<< "Content Length error" <<std::endl;
             message->PrintMessage();
         }
-        else if(message->getDestinationPort() == DestPort && message->getdata().length() == message->getContentLength())
+        else if(message->getDestinationPort() == port && message->getdata().length() == message->getContentLength())
         {
             std::cout<< "Message at Transport layer"<<std::endl;
             up->execute(message, false);

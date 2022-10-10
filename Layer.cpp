@@ -1,3 +1,5 @@
+//Parent class
+
 #include "Layer.h"
 
 Layer::Layer()
@@ -28,8 +30,11 @@ void Layer::configure(config settings)
 
 Layer::~Layer()
 {
-    delete down;
-    down = NULL;
+    if (down)
+    {
+        delete down;
+        down = NULL;
+    }
 }
 
 // ;)

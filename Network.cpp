@@ -35,7 +35,7 @@ void Network::execute(Message* message, bool sending=true)
     }
     else
     {
-        if (message->getDestinationIP() == DestIP)
+        if (message->getDestinationIP() == ip)
         {
             std::cout<< "Message at Network layer" <<std::endl;
             up->execute(message, false);

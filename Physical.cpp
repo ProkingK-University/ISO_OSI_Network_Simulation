@@ -33,6 +33,7 @@ Physical::~Physical()
     next = NULL;
 }
 
+//Connects network nodes together
 void Physical::link(Layer* LinkStack)
 {
     Physical* nodePtr = (Physical*) LinkStack;

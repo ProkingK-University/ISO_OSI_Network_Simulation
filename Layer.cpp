@@ -1,4 +1,4 @@
-//Parent class
+//Parent class for layers
 
 #include "Layer.h"
 
@@ -16,11 +16,13 @@ void Layer::setUp(Layer* up)
     this->up = up;
 }
 
+//Links layers together
 void Layer::link(Layer* linkStack)
 {
     down->link(linkStack);
 }
 
+//Congigures settings
 void Layer::configure(config settings)
 {
     computerName = settings.computerName;

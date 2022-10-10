@@ -8,6 +8,7 @@ Application::Application()
     down->setUp(this);
 }
 
+//Passes messages up and down the list
 void Application::execute(Message* message, bool sending=true)
 {
     if (sending)
